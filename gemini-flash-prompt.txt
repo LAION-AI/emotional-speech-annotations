@@ -1,368 +1,223 @@
 ### EMOTION TAXONOMY:
 
-1. **Amusement**: 'lighthearted fun', 'amusement', 'mirth', 'joviality', 'laughter', 'playfulness', 'silliness', 'jesting'
-2. **Elation**: 'happiness', 'excitement', 'joy', 'exhilaration', 'delight', 'jubilation', 'bliss', 'cheerfulness'
-3. **Pleasure/Ecstasy**: 'ecstasy', 'pleasure', 'bliss', 'rapture', 'beatitude'
-4. **Contentment**: 'contentment', 'relaxation', 'peacefulness', 'calmness', 'satisfaction', 'ease', 'serenity', 'fulfillment', 'gladness', 'lightness', 'tranquility'
-5. **Thankfulness/Gratitude**: 'thankfulness', 'gratitude', 'appreciation', 'gratefulness'
-6. **Affection**: 'sympathy', 'compassion', 'warmth', 'trust', 'caring', 'clemency', 'forgiveness', 'devotion', 'tenderness', 'reverence'
-7. **Infatuation**: 'infatuation', 'having a crush', 'romantic desire', 'fondness', 'butterflies in the stomach', 'adoration'
-8. **Hope/Enthusiasm/Optimism**: 'hope', 'enthusiasm', 'optimism', 'anticipation', 'courage', 'encouragement', 'zeal', 'fervor', 'inspiration', 'determination'
-9. **Triumph**: 'triumph', 'superiority'
-10. **Pride**: 'pride', 'dignity', 'self-confidence', 'honor', 'self-consciousness'
-11. **Interest**: 'interest', 'fascination', 'curiosity', 'intrigue'
-12. **Awe**: 'awe', 'awestruck', 'wonder'
-13. **Astonishment/Surprise**: 'astonishment', 'surprise', 'amazement', 'shock', 'startlement'
-14. **Concentration**: 'concentration', 'deep focus', 'engrossment', 'absorption', 'attention'
-15. **Contemplation**: 'contemplation', 'thoughtfulness', 'pondering', 'reflection', 'meditation', 'brooding', 'pensiveness'
-16. **Relief**: 'relief', 'respite', 'alleviation', 'solace', 'comfort', 'liberation'
-17. **Longing**: 'yearning', 'longing', 'pining', 'wistfulness', 'nostalgia', 'craving', 'desire', 'envy', 'homesickness', 'saudade'
-18. **Teasing**: 'teasing', 'bantering', 'mocking playfully', 'ribbing', 'provoking lightly'
-19. **Impatience and Irritability**: 'impatience', 'irritability', 'irritation', 'restlessness', 'short-temperedness', 'exasperation'
-20. **Sexual Lust**: 'sexual lust', 'carnal desire', 'lust', 'feeling horny', 'feeling turned on'
-21. **Doubt**: 'doubt', 'distrust', 'suspicion', 'skepticism', 'uncertainty', 'pessimism'
-22. **Fear**: 'fear', 'terror', 'dread', 'apprehension', 'alarm', 'horror', 'panic', 'nervousness'
-23. **Distress**: 'worry', 'anxiety', 'unease', 'anguish', 'trepidation', 'concern', 'upset', 'pessimism', 'foreboding'
-24. **Confusion**: 'confusion', 'bewilderment', 'flabbergasted', 'disorientation', 'perplexity'
-25. **Embarrassment**: 'embarrassment', 'shyness', 'mortification', 'discomfiture', 'awkwardness', 'self-consciousness'
-26. **Shame**: 'shame', 'guilt', 'remorse', 'humiliation', 'contrition'
-27. **Disappointment**: 'disappointment', 'regret', 'dismay', 'letdown', 'chagrin'
-28. **Sadness**: 'sadness', 'sorrow', 'grief', 'melancholy', 'dejection', 'despair', 'self-pity', 'sullenness', 'heartache', 'mournfulness', 'misery'
-29. **Bitterness**: 'resentment', 'acrimony', 'bitterness', 'cynicism', 'rancor'
-30. **Contempt**: 'contempt', 'disapproval', 'scorn', 'disdain', 'loathing', 'detestation'
-31. **Disgust**: 'disgust', 'revulsion', 'repulsion', 'abhorrence', 'loathing'
-32. **Anger**: 'anger', 'rage', 'fury', 'hate', 'irascibility', 'enragement', 'vexation', 'wrath', 'peevishness', 'annoyance'
-33. **Malevolence/Malice**: 'spite', 'sadism', 'malevolence', 'malice', 'desire to harm', 'schadenfreude'
-34. **Sourness**: 'sourness', 'tartness', 'acidity', 'acerbity', 'sharpness'
-35. **Pain**: 'physical pain', 'suffering', 'torment', 'ache', 'agony'
-36. **Helplessness**: 'helplessness', 'powerlessness', 'desperation', 'submission'
-37. **Fatigue/Exhaustion**: 'fatigue', 'exhaustion', 'weariness', 'lethargy', 'burnout'
-38. **Emotional Numbness**: 'numbness', 'detachment', 'insensitivity', 'emotional blunting', 'apathy', 'existential void', 'boredom', 'stoicism', 'indifference'
-39. **Intoxication/Altered States of Consciousness**: 'being drunk', 'stupor', 'intoxication', 'disorientation', 'altered perception'
-40. **Jealousy & Envy**: 'jealousy', 'envy', 'covetousness'
+1. Amusement: 'lighthearted fun', 'amusement', 'mirth', 'joviality', 'laughter', 'playfulness', 'silliness', 'jesting'
+2. Elation: 'happiness', 'excitement', 'joy', 'exhilaration', 'delight', 'jubilation', 'bliss', 'cheerfulness'
+3. Pleasure/Ecstasy: 'ecstasy', 'pleasure', 'bliss', 'rapture', 'beatitude'
+4. Contentment: 'contentment', 'relaxation', 'peacefulness', 'calmness', 'satisfaction', 'ease', 'serenity', 'fulfillment', 'gladness', 'lightness', 'tranquility'
+5. Thankfulness/Gratitude: 'thankfulness', 'gratitude', 'appreciation', 'gratefulness'
+6. Affection: 'sympathy', 'compassion', 'warmth', 'trust', 'caring', 'clemency', 'forgiveness', 'devotion', 'tenderness', 'reverence'
+7. Infatuation: 'infatuation', 'having a crush', 'romantic desire', 'fondness', 'butterflies in the stomach', 'adoration'
+8. Hope/Enthusiasm/Optimism: 'hope', 'enthusiasm', 'optimism', 'anticipation', 'courage', 'encouragement', 'zeal', 'fervor', 'inspiration', 'determination'
+9. Triumph: 'triumph', 'superiority'
+10. Pride: 'pride', 'dignity', 'self-confidence', 'honor', 'self-consciousness'
+11. Interest: 'interest', 'fascination', 'curiosity', 'intrigue'
+12. Awe: 'awe', 'awestruck', 'wonder'
+13. Astonishment/Surprise: 'astonishment', 'surprise', 'amazement', 'shock', 'startlement'
+14. Concentration: 'concentration', 'deep focus', 'engrossment', 'absorption', 'attention'
+15. Contemplation: 'contemplation', 'thoughtfulness', 'pondering', 'reflection', 'meditation', 'brooding', 'pensiveness'
+16. Relief: 'relief', 'respite', 'alleviation', 'solace', 'comfort', 'liberation'
+17. Longing: 'yearning', 'longing', 'pining', 'wistfulness', 'nostalgia', 'craving', 'desire', 'envy', 'homesickness', 'saudade'
+18. Teasing: 'teasing', 'bantering', 'mocking playfully', 'ribbing', 'provoking lightly'
+19. Impatience and Irritability: 'impatience', 'irritability', 'irritation', 'restlessness', 'short-temperedness', 'exasperation'
+20. Sexual Lust: 'sexual lust', 'carnal desire', 'lust', 'feeling horny', 'feeling turned on'
+21. Doubt: 'doubt', 'distrust', 'suspicion', 'skepticism', 'uncertainty', 'pessimism'
+22. Fear: 'fear', 'terror', 'dread', 'apprehension', 'alarm', 'horror', 'panic', 'nervousness'
+23. Distress: 'worry', 'anxiety', 'unease', 'anguish', 'trepidation', 'concern', 'upset', 'pessimism', 'foreboding'
+24. Confusion: 'confusion', 'bewilderment', 'flabbergasted', 'disorientation', 'perplexity'
+25. Embarrassment: 'embarrassment', 'shyness', 'mortification', 'discomfiture', 'awkwardness', 'self-consciousness'
+26. Shame: 'shame', 'guilt', 'remorse', 'humiliation', 'contrition'
+27. Disappointment: 'disappointment', 'regret', 'dismay', 'letdown', 'chagrin'
+28. Sadness: 'sadness', 'sorrow', 'grief', 'melancholy', 'dejection', 'despair', 'self-pity', 'sullenness', 'heartache', 'mournfulness', 'misery'
+29. Bitterness: 'resentment', 'acrimony', 'bitterness', 'cynicism', 'rancor'
+30. Contempt: 'contempt', 'disapproval', 'scorn', 'disdain', 'loathing', 'detestation'
+31. Disgust: 'disgust', 'revulsion', 'repulsion', 'abhorrence', 'loathing'
+32. Anger: 'anger', 'rage', 'fury', 'hate', 'irascibility', 'enragement', 'vexation', 'wrath', 'peevishness', 'annoyance'
+33. Malevolence/Malice: 'spite', 'sadism', 'malevolence', 'malice', 'desire to harm', 'schadenfreude'
+34. Sourness: 'sourness', 'tartness', 'acidity', 'acerbity', 'sharpness'
+35. Pain: 'physical pain', 'suffering', 'torment', 'ache', 'agony'
+36. Helplessness: 'helplessness', 'powerlessness', 'desperation', 'submission'
+37. Fatigue/Exhaustion: 'fatigue', 'exhaustion', 'weariness', 'lethargy', 'burnout'
+38. Emotional Numbness: 'numbness', 'detachment', 'insensitivity', 'emotional blunting', 'apathy', 'existential void', 'boredom', 'stoicism', 'indifference'
+39. Intoxication/Altered States of Consciousness: 'being drunk', 'stupor', 'intoxication', 'disorientation', 'altered perception'
+40. Jealousy & Envy: 'jealousy', 'envy', 'covetousness'
 
 ---
+Instructions for Audio Analysis
+Objective: Analyze a single short audio clip and produce a dictionary in Python format containing the specific attributes listed below. Focus only on these attributes in your analysis.
 
-### **Very Clear Instructions for Audio Analysis**
+Attributes to Include in the Dictionary
+background_noise (String or None):
 
-**Objective**: Analyze a single short audio clip and produce a dictionary in Python format containing specific attributes as detailed below. This analysis focuses on the entire audio clip as one unit.
+Description: Provide a detailed description of any background sounds present in the audio clip. Be specific about the type and quality of sounds. Use None if there is no background noise.
+Example: "background_noise": "Soft jazz music playing in the background with occasional clinking of glasses."
+arousal (Integer):
 
----
+Description: Indicate the excitement level of the speaker based on their tone of voice.
+0: Quiet (e.g., whispering, very calm)
+1: Calm (e.g., relaxed, low energy)
+2: Normal speech (e.g., regular conversation)
+3: Aroused (e.g., excited, speaking loudly)
+4: Very aroused (e.g., shouting, yelling)
+Example: "arousal": 3
+dominance (Integer):
 
-#### **Important Changes**:
+Description: Reflects the assertiveness level of the speaker based on their tone of voice.
+-2: Very submissive (e.g., timid, yielding)
+-1: Submissive (e.g., hesitant, unsure)
+0: Neutral
+1: Dominant (e.g., assertive, confident)
+2: Very dominant (e.g., commanding, controlling)
+Example: "dominance": 1
+gender (String):
 
-- **Valence, Arousal, and Dominance Clarification**:
-  - **Valence**: Make it very clear that a **negative tone of voice** or tones of voice that convey **negative emotions** should have **negative values for valence**, and **positive tones of voice** like happiness and joy should have **positive values for valence**.
-  - **Arousal**: Behaviors like **shouting** or being **completely excited** should have **high values for arousal**, and being **quiet** or speaking **softly** should have **low values for arousal**.
-  - **Dominance**: Provide concrete examples to clarify how to assign dominance values based on tone of voice.
+Description: Specify the speaker's gender.
+"Male"
+"Female"
+"Unsure"
+Example: "gender": "Female"
+speaking_pace (String):
 
-- **Concrete Examples**:
-  - Provide concrete examples to make these points clearer in both the attribute descriptions and the example output.
+Description: Indicate the rate at which the speaker is talking.
+"Fast"
+"Moderate"
+"Slow"
+Example: "speaking_pace": "Moderate"
+estimated_age (Integer):
 
-- **General Structure**:
-  - Leave the general structure of the instructions and the example as it is.
+Description: Provide an estimated age of the speaker in years.
+Example: "estimated_age": 30
+emotions (List of Dictionaries):
 
----
+Description: List up to 5 emotions conveyed by the speaker, based on their tone of voice. Use the EMOTION TAXONOMY provided below. Each emotion should include:
+category: Emotion category from the taxonomy.
+intensity:
+"Subtle intensity"
+"Well noticeable intensity"
+"Strong/extreme intensity"
+Example:
+python
+Code kopieren
+"emotions": [
+    {"category": "Elation", "intensity": "Strong/extreme intensity"},
+    {"category": "Hope/Enthusiasm/Optimism", "intensity": "Well noticeable intensity"}
+]
+valence (Integer):
 
-#### **Output Format**:
+Description: Reflects the positivity or negativity of the speech based on the speaker's tone of voice.
+-2: Very negative (e.g., angry, sad)
+-1: Negative (e.g., slightly upset)
+0: Neutral
+1: Positive (e.g., pleasant)
+2: Very positive (e.g., joyful)
+Example: "valence": 2"
+health_or_disorder (Integer):
 
-- The final output should be a **single Python dictionary**.
-- **Do not miss any attributes**; the dictionary must contain all the keys listed.
-- **Ensure correct data types** for all values (e.g., strings, integers, booleans).
+Description: Indicates how healthy the speaker's voice sounds.
+2: Very healthy (clear, vibrant voice)
+1: Healthy (normal tone)
+0: Neutral
+-1: Slightly unhealthy (tired, weak)
+-2: Unhealthy (hoarse, ill)
+Example: "health_or_disorder": 2"
+softness_harshness (Integer):
 
----
+Description: Describes the quality of the voice.
+2: Very soft (melodic, soothing)
+1: Soft (pleasant)
+0: Neutral
+-1: Slightly harsh (some roughness)
+-2: Very harsh (aggressive, grating)
+Example: "softness_harshness": 1"
+reverb (Integer):
 
-#### **Attributes to Include in the Dictionary**:
+Description: Amount of echo or reverberation in the audio.
+0: No reverb
+1: Slight reverb (minimal echo)
+2: Moderate reverb (noticeable echo)
+3: High reverb (significant echo)
+4: Very high reverb (heavy echo)
+Example: "reverb": 0"
+monotony_melody (Integer):
 
-1. **`transcription`**:
-   - **Type**: String
-   - **Description**: The exact text spoken in the audio clip.
-   - **Example**: `"transcription": "I can't believe you did that!"`
+Description: Indicates whether the speech is monotone or melodic.
+-2: Very monotone (flat, no variation)
+-1: Slightly monotone
+0: Neutral
+1: Melodic (pleasant variation)
+2: Very melodic (almost like singing)
+Example: "monotony_melody": 1"
+Data Types and Formatting
+Strings: Enclosed in double quotes " ".
+Integers: Whole numbers without quotes.
+Lists: Enclosed in square brackets [ ].
+Dictionaries: Enclosed in curly braces { }.
 
-2. **`timestamps`**:
-   - **Type**: String
-   - **Description**: The start and end times of the audio clip in the format `"HH:MM:SS.mmm - HH:MM:SS.mmm"`.
-   - **Be very accurate** about the timestamps.
-   - **Example**: `"timestamps": "00:00:10.500 - 00:00:12.700"`
+Example Outputs
 
-3. **`gender`**:
-   - **Type**: String
-   - **Description**: Identify the speaker's gender: `"Male"`, `"Female"`, or `"Unsure"`.
-   - **Example**: `"gender": "Male"`
-
-4. **`estimated_age`**:
-   - **Type**: Integer
-   - **Description**: Provide an estimated age of the speaker.
-   - **Example**: `"estimated_age": 45`
-
-5. **`health_or_disorder`**:
-   - **Type**: Integer
-   - **Description**: Reflects how healthy the voice sounds:
-     - `2`: Very healthy (clear, vibrant voice)
-     - `1`: Healthy (normal tone)
-     - `0`: Neutral (neither particularly healthy nor unhealthy)
-     - `-1`: Slightly unhealthy (tired, weak)
-     - `-2`: Unhealthy (hoarse, ill)
-   - **Example**: `"health_or_disorder": 1"`
-
-6. **`softness_harshness`**:
-   - **Type**: Integer
-   - **Description**: Reflects the voice quality:
-     - `2`: Very soft (melodic, soothing)
-     - `1`: Soft (pleasant)
-     - `0`: Neutral (neither particularly soft nor harsh)
-     - `-1`: Slightly harsh (some roughness)
-     - `-2`: Very harsh (aggressive, grating)
-   - **Example**: `"softness_harshness": -1"`
-
-7. **`speaker`**:
-   - **Type**: String
-   - **Description**: Identify the speaker (e.g., `"Speaker 1"`).
-   - **Example**: `"speaker": "Speaker 1"`
-
-8. **`background_noise`**:
-   - **Type**: String or `None`
-   - **Description**: Describe any non-speech sounds during the audio clip. Be specific about the type of sound, such as music (style, quality), sound effects (animals, vehicles, objects, people, processes, events). Use `None` if there are none.
-   - **Example**: `"background_noise": "Loud traffic noise with car horns blaring."`
-
-9. **`speaking_pace`**:
-   - **Type**: String
-   - **Description**: Indicate the rate of speech: `"Fast"`, `"Moderate"`, or `"Slow"`.
-   - **Example**: `"speaking_pace": "Fast"`
-
-10. **`valence`**:
-    - **Type**: Integer
-    - **Description**: Reflects how positive or negative the speech sounds (based on tone of voice). This should refer to what the tone of voice seems to convey. **Solely focus on the speaker's tone of voice**. **Be very accurate about the annotation process and be very factual.**
-      - `-2`: Very negative (e.g., angry, sad)
-      - `-1`: Negative (e.g., slightly upset)
-      - `0`: Neutral
-      - `1`: Positive (e.g., pleasant)
-      - `2`: Very positive (e.g., joyful)
-    - **Example**: `"valence": -2"` (e.g., an angry tone)
-
-11. **`arousal`**:
-    - **Type**: Integer
-    - **Description**: Assign a value based on the speaker's excitement level (based on tone of voice). **Solely focus on the speaker's tone of voice**. **Be very accurate about the annotation process and be very factual.**
-      - `0`: Quiet (e.g., whispering, very calm)
-      - `1`: Calm (e.g., relaxed, low energy)
-      - `2`: Normal speech (e.g., regular conversation)
-      - `3`: Aroused (e.g., excited, speaking loudly)
-      - `4`: Very aroused (e.g., shouting, yelling)
-    - **Example**: `"arousal": 4"` (e.g., shouting in anger)
-
-12. **`dominance`**:
-    - **Type**: Integer
-    - **Description**: Assign a value based on the speaker's assertiveness (based on tone of voice). **Solely focus on the speaker's tone of voice**. **Be very accurate about the annotation process and be very factual.**
-      - `-2`: Very submissive (e.g., timid, yielding)
-      - `-1`: Submissive (e.g., hesitant, unsure)
-      - `0`: Neutral
-      - `1`: Dominant (e.g., assertive, confident)
-      - `2`: Very dominant (e.g., commanding, controlling)
-    - **Example**: `"dominance": 2"` (e.g., commanding tone)
-
-13. **`reverb`**:
-    - **Type**: Integer
-    - **Description**: Amount of echo in the audio:
-      - `0`: No reverb
-      - `1`: Slight reverb (minimal echo)
-      - `2`: Moderate reverb (noticeable echo)
-      - `3`: High reverb (significant echo)
-      - `4`: Very high reverb (heavy echo)
-    - **Example**: `"reverb": 0"`
-
-14. **`monotony_melody`**:
-    - **Type**: Integer
-    - **Description**: Reflects whether the speech is monotone or melodic:
-      - `-2`: Very monotone (flat, no variation)
-      - `-1`: Slightly monotone
-      - `0`: Neutral
-      - `1`: Melodic (pleasant variation)
-      - `2`: Very melodic (almost like singing)
-    - **Example**: `"monotony_melody": -1"` (e.g., flat tone due to anger)
-
-15. **`emotions`**:
-    - **Type**: List of dictionaries
-    - **Description**: List up to **5 emotions** from the **EMOTION TAXONOMY**, starting with the most intense (based on tone of voice). **Solely focus on the speaker's tone of voice**. **Be very accurate about the annotation process and be very factual.** Each emotion dictionary contains:
-      - **`category`**: String (emotion category)
-      - **`intensity`**: String (intensity level)
-        - `"Subtle intensity"`
-        - `"Well noticeable intensity"`
-        - `"Strong/extreme intensity"`
-    - **Example**:
-      ```python
-      "emotions": [
-          {"category": "Anger", "intensity": "Strong/extreme intensity"},
-          {"category": "Contempt", "intensity": "Well noticeable intensity"}
-      ]
-      ```
-
----
-
-#### **Step-by-Step Guide for the Audio Clip**:
-
-1. **Transcribe the Audio Clip**:
-   - Write down exactly what was said.
-   - **Be very accurate** about the transcription and timestamps.
-
-2. **Record Timestamps**:
-   - Note the start and end times in `"HH:MM:SS.mmm - HH:MM:SS.mmm"` format, including milliseconds.
-   - **Be very accurate** about the timestamps.
-
-3. **Determine Gender**:
-   - Choose `"Male"`, `"Female"`, or `"Unsure"`.
-
-4. **Estimate Age**:
-   - Provide an integer (e.g., `45`).
-
-5. **Assess Health or Disorder**:
-   - Use the scale from `-2` (Unhealthy) to `2` (Very healthy).
-
-6. **Assess Softness versus Harshness**:
-   - Use the scale from `-2` (Very harsh) to `2` (Very soft).
-
-7. **Identify the Speaker**:
-   - Assign a speaker label (e.g., `"Speaker 1"`).
-
-8. **Note Background Noise**:
-   - Describe any sounds (e.g., music, sound effects).
-   - Be specific about the type and quality.
-   - If none, set to `None`.
-
-9. **Assess Speaking Pace**:
-   - Choose `"Fast"`, `"Moderate"`, or `"Slow"`.
-
-10. **Assess Valence**:
-    - Use the scale from `-2` (Very negative) to `2` (Very positive).
-    - **Negative tone of voice** (e.g., anger, sadness) should have **negative valence** values.
-    - **Positive tone of voice** (e.g., happiness, joy) should have **positive valence** values.
-    - **Be very accurate** about the annotation process and be very factual.
-
-11. **Assess Arousal Level**:
-    - Use the scale from `0` (Quiet) to `4` (Very aroused).
-    - **High arousal**: Behaviors like **shouting** or being **very excited** (e.g., arousal of `3` or `4`).
-    - **Low arousal**: Being **quiet** or speaking **softly** (e.g., arousal of `0` or `1`).
-    - **Be very accurate** about the annotation process and be very factual.
-
-12. **Assess Dominance Level**:
-    - Use the scale from `-2` (Very submissive) to `2` (Very dominant).
-    - **Dominant tone**: Commanding, assertive speech (e.g., dominance of `1` or `2`).
-    - **Submissive tone**: Timid, hesitant speech (e.g., dominance of `-1` or `-2`).
-    - **Be very accurate** about the annotation process and be very factual.
-
-13. **Detect Reverb**:
-    - Use the scale from `0` (No reverb) to `4` (Very high reverb).
-
-14. **Assess Monotony versus Melody**:
-    - Use the scale from `-2` (Very monotone) to `2` (Very melodic).
-
-15. **Identify Emotions**:
-    - List up to **5 emotions**.
-    - For each, provide:
-      - **`category`**: From the **EMOTION TAXONOMY**.
-      - **`intensity`**: `"Subtle intensity"`, `"Well noticeable intensity"`, or `"Strong/extreme intensity"`.
-    - **Be very accurate** about the annotation process and be very factual.
-
----
-
-#### **Data Types and Formatting**:
-
-- **Strings**: Enclosed in double quotes `" "`.
-- **Integers**: Whole numbers without quotes.
-- **Booleans**: `True` or `False` without quotes.
-- **Lists**: Enclosed in square brackets `[ ]`.
-- **Dictionaries**: Enclosed in curly braces `{ }`.
-
----
-
-#### **Example Output**:
-
-```python
+Example 1: Positive Emotions
 {
-    "transcription": "I can't believe you did that!",
-    "timestamps": "00:00:10.500 - 00:00:12.700",
-    "gender": "Male",
-    "estimated_age": 45,
-    "health_or_disorder": 1,
-    "softness_harshness": -1,
-    "speaker": "Speaker 1",
+    "background_noise": "Soft jazz music playing in the background with occasional clinking of glasses.",
+    "arousal": 3,
+    "dominance": 1,
+    "gender": "Female",
+    "speaking_pace": "Moderate",
+    "estimated_age": 30,
+    "emotions": [
+        {"category": "Elation", "intensity": "Strong/extreme intensity"},
+        {"category": "Affection", "intensity": "Well noticeable intensity"}
+    ],
+    "valence": 2,
+    "health_or_disorder": 2,
+    "softness_harshness": 1,
+    "reverb": 0,
+    "monotony_melody": 1
+}
+
+Example 2: Negative Emotions
+
+{
     "background_noise": "Loud traffic noise with car horns blaring.",
-    "speaking_pace": "Fast",
-    "valence": -2,
     "arousal": 4,
     "dominance": 2,
-    "reverb": 0,
-    "monotony_melody": -1,
+    "gender": "Male",
+    "speaking_pace": "Fast",
+    "estimated_age": 45,
     "emotions": [
         {"category": "Anger", "intensity": "Strong/extreme intensity"},
         {"category": "Contempt", "intensity": "Well noticeable intensity"}
-    ]
-}
-```
-
-Another example with positive emotions:
-
-```python
-{
-    "transcription": "That's absolutely fantastic news!",
-    "timestamps": "00:01:15.200 - 00:01:17.300",
-    "gender": "Female",
-    "estimated_age": 30,
-    "health_or_disorder": 2,
-    "softness_harshness": 2,
-    "speaker": "Speaker 2",
-    "background_noise": "Birds chirping softly in the background.",
-    "speaking_pace": "Moderate",
-    "valence": 2,
-    "arousal": 3,
-    "dominance": 1,
+    ],
+    "valence": -2,
+    "health_or_disorder": 1,
+    "softness_harshness": -1,
     "reverb": 0,
-    "monotony_melody": 2,
-    "emotions": [
-        {"category": "Elation", "intensity": "Strong/extreme intensity"},
-        {"category": "Hope/Enthusiasm/Optimism", "intensity": "Well noticeable intensity"}
-    ]
+    "monotony_melody": -1
 }
-```
 
-And an example with low arousal:
+Example 3: Low Arousal and Neutral Valence
 
-```python
 {
-    "transcription": "I guess that's okay.",
-    "timestamps": "00:02:30.000 - 00:02:32.000",
-    "gender": "Male",
-    "estimated_age": 25,
-    "health_or_disorder": 0,
-    "softness_harshness": 0,
-    "speaker": "Speaker 3",
-    "background_noise": None,
-    "speaking_pace": "Slow",
-    "valence": 0,
+    "background_noise": "Quiet room with a faint ticking clock.",
     "arousal": 1,
     "dominance": -1,
-    "reverb": 0,
-    "monotony_melody": -1,
+    "gender": "Male",
+    "speaking_pace": "Slow",
+    "estimated_age": 25,
     "emotions": [
         {"category": "Emotional Numbness", "intensity": "Well noticeable intensity"},
         {"category": "Contemplation", "intensity": "Subtle intensity"}
-    ]
+    ],
+    "valence": 0,
+    "health_or_disorder": 0,
+    "softness_harshness": 0,
+    "reverb": 0,
+    "monotony_melody": -1
 }
-```
 
----
-
-#### **Final Checklist**:
-
-- **The dictionary contains all 15 attributes**.
-- **Data types are correct** (strings, integers, booleans).
-- **Keys are spelled exactly** as specified.
-- **Values are within the defined ranges**.
-- **Timestamps include milliseconds** in `"HH:MM:SS.mmm"` format.
-- **Background noise descriptions are detailed and specific**.
-- **The output is properly formatted** as a Python dictionary.
-- **Ensure emotions are selected from the EMOTION TAXONOMY**. If an emotion is not listed, choose the closest matching category.
-- **Be very accurate about the annotation process and be very factual**.
-
----
-
-By following these instructions carefully and accurately, the analysis will be thorough, and the output will be correctly formatted and ready for further processing.
+Final Checklist
+All specified attributes are included in the dictionary.
+Data types are correct (strings, integers, lists, dictionaries).
+Values are within the defined ranges.
+Emotions are selected from the EMOTION TAXONOMY.
+Descriptions are detailed and specific where applicable.
+The output is properly formatted as a Python dictionary.
+Be very accurate about the annotation process and very factual in your descriptions.
