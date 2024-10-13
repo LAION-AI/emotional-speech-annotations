@@ -1,4 +1,170 @@
-### EMOTION TAXONOMY:
+### Instructions for Audio Analysis
+
+Objective: Analyze a single short audio clip and produce a dictionary in Python format containing the specific attributes listed below. Focus only on these attributes in your analysis.
+
+---
+
+### Attributes to Include in the Dictionary
+
+1. background_noise *(String or None)*:
+   - Description: Provide a detailed description of any background sounds present in the audio clip. Be specific about the type and quality of sounds. Use `None` if there is no background noise.
+   - Example:
+     ```python
+     "background_noise": "Soft jazz music playing in the background with occasional clinking of glasses."
+     ```
+
+2. arousal *(Integer)*:
+   - Description: Indicate the excitement level of the speaker based on their tone of voice.
+     - `0`: Quiet (e.g., whispering, very calm)
+     - `1`: Calm (e.g., relaxed, low energy)
+     - `2`: Normal speech (e.g., regular conversation)
+     - `3`: Aroused (e.g., excited, speaking loudly)
+     - `4`: Very aroused (e.g., shouting, yelling)
+   - Example:
+     ```python
+     "arousal": 3
+     ```
+
+3. dominance *(Integer)*:
+   - Description: Reflects the assertiveness level of the speaker based on their tone of voice.
+     - `-2`: Very submissive (e.g., timid, yielding)
+     - `-1`: Submissive (e.g., hesitant, unsure)
+     - `0`: Neutral
+     - `1`: Dominant (e.g., assertive, confident)
+     - `2`: Very dominant (e.g., commanding, controlling)
+   - Example:
+     ```python
+     "dominance": 1
+     ```
+
+4. gender *(String)*:
+   - Description: Specify the speaker's gender.
+     - `"Male"`
+     - `"Female"`
+     - `"Unsure"`
+   - Example:
+     ```python
+     "gender": "Female"
+     ```
+
+5. speaking_pace *(String)*:
+   - Description: Indicate the rate at which the speaker is talking.
+     - `"Fast"`
+     - `"Moderate"`
+     - `"Slow"`
+   - Example:
+     ```python
+     "speaking_pace": "Moderate"
+     ```
+
+6. estimated_age *(Integer)*:
+   - Description: Provide an estimated age of the speaker in years.
+   - Example:
+     ```python
+     "estimated_age": 30
+     ```
+
+7. emotions *(List of Dictionaries)*:
+   - Description: List up to 5 emotions conveyed by the speaker, based on their tone of voice. Use the EMOTION TAXONOMY provided below. Each emotion should include:
+     - `category`: Emotion category from the taxonomy.
+     - `intensity`:
+       - `"Subtle intensity"`
+       - `"Well noticeable intensity"`
+       - `"Strong/extreme intensity"`
+   - Example:
+     ```python
+     "emotions": [
+         {"category": "Elation", "intensity": "Strong/extreme intensity"},
+         {"category": "Affection", "intensity": "Well noticeable intensity"}
+     ]
+     ```
+
+8. valence *(Integer)*:
+   - Description: Reflects the positivity or negativity of the speech based on the speaker's tone of voice.
+     - `-2`: Very negative (e.g., angry, sad)
+     - `-1`: Negative (e.g., slightly upset)
+     - `0`: Neutral
+     - `1`: Positive (e.g., pleasant)
+     - `2`: Very positive (e.g., joyful)
+   - Example:
+     ```python
+     "valence": 2
+     ```
+
+9. health_or_disorder *(Integer)*:
+   - Description: Indicates how healthy the speaker's voice sounds.
+     - `2`: Very healthy (clear, vibrant voice)
+     - `1`: Healthy (normal tone)
+     - `0`: Neutral
+     - `-1`: Slightly unhealthy (tired, weak)
+     - `-2`: Unhealthy (hoarse, ill)
+   - Example:
+     ```python
+     "health_or_disorder": 2
+     ```
+
+10. softness_harshness *(Integer)*:
+    - Description: Describes the quality of the voice.
+      - `2`: Very soft (melodic, soothing)
+      - `1`: Soft (pleasant)
+      - `0`: Neutral
+      - `-1`: Slightly harsh (some roughness)
+      - `-2`: Very harsh (aggressive, grating)
+    - Example:
+      ```python
+      "softness_harshness": 1
+      ```
+
+11. reverb *(Integer)*:
+    - Description: Amount of echo or reverberation in the audio.
+      - `0`: No reverb
+      - `1`: Slight reverb (minimal echo)
+      - `2`: Moderate reverb (noticeable echo)
+      - `3`: High reverb (significant echo)
+      - `4`: Very high reverb (heavy echo)
+    - Example:
+      ```python
+      "reverb": 0
+      ```
+
+12. monotony_melody *(Integer)*:
+    - Description: Indicates whether the speech is monotone or melodic.
+      - `-2`: Very monotone (flat, no variation)
+      - `-1`: Slightly monotone
+      - `0`: Neutral
+      - `1`: Melodic (pleasant variation)
+      - `2`: Very melodic (almost like singing)
+    - Example:
+      ```python
+      "monotony_melody": 1
+      ```
+
+13. vocal_bursts *(List of Strings)*:
+    - Description: List all detected vocal bursts present in the audio clip. Use the VOCAL BURSTS TAXONOMY provided below. Each vocal burst should be specified by its category.
+    - Example:
+      ```python
+      "vocal_bursts": ["Chuckle", "Contented Sigh"]
+      ```
+
+14. caption *(String)*:
+    - Description: Provide a comprehensive caption of the audio that integrates all previously recognized attributes, elements, emotions, qualities, and other relevant details of the audio.
+    - Example:
+      ```python
+      "caption": "A female speaker around 30 years old, with a healthy, soft, and melodic voice, is speaking moderately in a joyful and affectionate tone. There is soft jazz music and occasional clinking of glasses in the background. Her speech conveys strong elation and noticeable affection, indicating a very positive mood."
+      ```
+
+---
+
+### Data Types and Formatting
+
+- Strings: Enclosed in double quotes `" "`.
+- Integers: Whole numbers without quotes.
+- Lists: Enclosed in square brackets `[ ]`.
+- Dictionaries: Enclosed in curly braces `{ }`.
+
+---
+
+### EMOTION TAXONOMY
 
 1. Amusement: 'lighthearted fun', 'amusement', 'mirth', 'joviality', 'laughter', 'playfulness', 'silliness', 'jesting'
 2. Elation: 'happiness', 'excitement', 'joy', 'exhilaration', 'delight', 'jubilation', 'bliss', 'cheerfulness'
@@ -40,121 +206,126 @@
 38. Emotional Numbness: 'numbness', 'detachment', 'insensitivity', 'emotional blunting', 'apathy', 'existential void', 'boredom', 'stoicism', 'indifference'
 39. Intoxication/Altered States of Consciousness: 'being drunk', 'stupor', 'intoxication', 'disorientation', 'altered perception'
 40. Jealousy & Envy: 'jealousy', 'envy', 'covetousness'
+---
+
+### VOCAL BURSTS TAXONOMY
+
+
+### Laughter Variations:
+1. Chuckle: A soft, suppressed laugh indicating mild amusement.
+2. Giggle: A light, often high-pitched laugh expressing joy or embarrassment.
+3. Guffaw: A loud, unrestrained laugh showing great amusement.
+4. Snicker: A stifled laugh, often conveying mockery or sarcasm.
+5. Cackle: A harsh, sharp laugh that can sound unsettling.
+
+### Sighs:
+1. Contented Sigh: A deep exhale expressing satisfaction or relief.
+2. Exasperated Sigh: An audible breath indicating frustration or annoyance.
+3. Relief Sigh: A release of tension after stress.
+
+### Gasps:
+1. Surprised Gasp: A sharp intake of breath signaling astonishment.
+2. Fearful Gasp: A sudden breath indicating fear or shock.
+
+### Groans and Moans:
+1. Painful Groan: A low sound expressing physical discomfort.
+2. Displeased Groan: A vocalization showing dissatisfaction.
+3. Pleasure Moan: A soft sound expressing enjoyment or contentment.
+
+### Cries and Whimpers:
+1. Sob: Crying audibly with convulsive gasps.
+2. Whimper: A low, feeble sound expressing pain or fear.
+3. Wail: A prolonged, high-pitched cry of grief or despair.
+
+### Shouts and Screams:
+1. Scream: A loud, high-pitched cry expressing extreme emotion.
+2. Shriek: A sharp, piercing scream often associated with fear.
+3. Yell: A loud call expressing anger or urgency.
+
+### Hums and Mumbles:
+1. Hum: A steady sound made with closed lips, often in thought or contentment.
+2. Mumble: Indistinct speech, often due to nervousness or hesitation.
+
+### Exclamations:
+1. Ah!: Expression of realization or satisfaction.
+2. Oh!: Indicates surprise or understanding.
+3. Wow!: Conveys astonishment or admiration.
+4. Oops!: Acknowledges a minor mistake.
+5. Uh-oh!: Signals apprehension or the anticipation of trouble.
+
+### Grunts:
+1. Affirmative Grunt: A short sound indicating agreement.
+2. Effort Grunt: Emitted during physical exertion.
+
+### Snorts and Sniffs:
+1. Snort: A sudden expulsion of air through the nose, expressing disbelief or disdain.
+2. Sniff: Inhaling audibly through the nose, possibly indicating emotion suppression.
+
+### Panting and Heavy Breathing:
+1. Panting: Rapid breathing due to exertion or excitement.
+2. Heavy Breathing: Deep breaths often signaling fatigue or tension.
+
+### Clicks and Tsk Sounds:
+1. Tongue Click: A sharp sound made by the tongue, sometimes to express disappointment.
+2. Tsk: A sound indicating disapproval or annoyance.
+
+### Whistles:
+1. Whistling Tune: Producing musical notes by forcing breath through puckered lips.
+2. Wolf Whistle: A two-note whistle expressing admiration.
+
+### Hisses:
+1. Hiss: A sharp sibilant sound expressing disapproval or warning.
+
+### Exhalations and Inhalations:
+1. Deep Breath: Taking in a large amount of air, often to calm oneself.
+2. Sharp Inhale: A quick breath indicating surprise or realization.
+
+### Gulps:
+1. Nervous Gulp: Swallowing audibly due to anxiety.
+
+### Yawns:
+1. Yawn: An involuntary opening of the mouth wide, indicating tiredness.
+
+### Hiccups:
+1. Hiccup: An involuntary spasm of the diaphragm causing a characteristic sound.
+
+### Lip Smacks:
+1. Lip Smack: Sound made by parting the lips, can indicate anticipation.
+
+### Blowing Sounds:
+1. Blowing a Kiss: A gesture expressing affection.
+
+### Hums of Contemplation:
+1. Hmm: A vocalization indicating thinking or hesitation.
+
+### Expressions of Agreement:
+1. Uh-huh: An affirmative sound indicating understanding.
+
+### Expressions of Disagreement:
+1. Uh-uh: A negative sound indicating refusal.
+
+### Shushing Sound:
+1. Shh!: A request for silence.
+
+### Coughs and Sneezes:
+1. Cough: Expelling air from the lungs with a sharp sound.
+2. Sneeze: A sudden expulsion of air through the nose and mouth.
+
+### Clearing Throat:
+1. Ahem: A sound made to attract attention or signal discomfort.
+
+### Animalistic Sounds:
+1. Growl: A low, guttural sound expressing anger.
+2. Purr: A soft vibrating sound expressing contentment. 
+
 
 ---
-Instructions for Audio Analysis
-Objective: Analyze a single short audio clip and produce a dictionary in Python format containing the specific attributes listed below. Focus only on these attributes in your analysis.
 
-Attributes to Include in the Dictionary
-background_noise (String or None):
+### Example Outputs
 
-Description: Provide a detailed description of any background sounds present in the audio clip. Be specific about the type and quality of sounds. Use None if there is no background noise.
-Example: "background_noise": "Soft jazz music playing in the background with occasional clinking of glasses."
-arousal (Integer):
+#### Example 1: Positive Emotions
 
-Description: Indicate the excitement level of the speaker based on their tone of voice.
-0: Quiet (e.g., whispering, very calm)
-1: Calm (e.g., relaxed, low energy)
-2: Normal speech (e.g., regular conversation)
-3: Aroused (e.g., excited, speaking loudly)
-4: Very aroused (e.g., shouting, yelling)
-Example: "arousal": 3
-dominance (Integer):
-
-Description: Reflects the assertiveness level of the speaker based on their tone of voice.
--2: Very submissive (e.g., timid, yielding)
--1: Submissive (e.g., hesitant, unsure)
-0: Neutral
-1: Dominant (e.g., assertive, confident)
-2: Very dominant (e.g., commanding, controlling)
-Example: "dominance": 1
-gender (String):
-
-Description: Specify the speaker's gender.
-"Male"
-"Female"
-"Unsure"
-Example: "gender": "Female"
-speaking_pace (String):
-
-Description: Indicate the rate at which the speaker is talking.
-"Fast"
-"Moderate"
-"Slow"
-Example: "speaking_pace": "Moderate"
-estimated_age (Integer):
-
-Description: Provide an estimated age of the speaker in years.
-Example: "estimated_age": 30
-emotions (List of Dictionaries):
-
-Description: List up to 5 emotions conveyed by the speaker, based on their tone of voice. Use the EMOTION TAXONOMY provided below. Each emotion should include:
-category: Emotion category from the taxonomy.
-intensity:
-"Subtle intensity"
-"Well noticeable intensity"
-"Strong/extreme intensity"
-Example:
-python
-Code kopieren
-"emotions": [
-    {"category": "Elation", "intensity": "Strong/extreme intensity"},
-    {"category": "Hope/Enthusiasm/Optimism", "intensity": "Well noticeable intensity"}
-]
-valence (Integer):
-
-Description: Reflects the positivity or negativity of the speech based on the speaker's tone of voice.
--2: Very negative (e.g., angry, sad)
--1: Negative (e.g., slightly upset)
-0: Neutral
-1: Positive (e.g., pleasant)
-2: Very positive (e.g., joyful)
-Example: "valence": 2"
-health_or_disorder (Integer):
-
-Description: Indicates how healthy the speaker's voice sounds.
-2: Very healthy (clear, vibrant voice)
-1: Healthy (normal tone)
-0: Neutral
--1: Slightly unhealthy (tired, weak)
--2: Unhealthy (hoarse, ill)
-Example: "health_or_disorder": 2"
-softness_harshness (Integer):
-
-Description: Describes the quality of the voice.
-2: Very soft (melodic, soothing)
-1: Soft (pleasant)
-0: Neutral
--1: Slightly harsh (some roughness)
--2: Very harsh (aggressive, grating)
-Example: "softness_harshness": 1"
-reverb (Integer):
-
-Description: Amount of echo or reverberation in the audio.
-0: No reverb
-1: Slight reverb (minimal echo)
-2: Moderate reverb (noticeable echo)
-3: High reverb (significant echo)
-4: Very high reverb (heavy echo)
-Example: "reverb": 0"
-monotony_melody (Integer):
-
-Description: Indicates whether the speech is monotone or melodic.
--2: Very monotone (flat, no variation)
--1: Slightly monotone
-0: Neutral
-1: Melodic (pleasant variation)
-2: Very melodic (almost like singing)
-Example: "monotony_melody": 1"
-Data Types and Formatting
-Strings: Enclosed in double quotes " ".
-Integers: Whole numbers without quotes.
-Lists: Enclosed in square brackets [ ].
-Dictionaries: Enclosed in curly braces { }.
-
-Example Outputs
-
-Example 1: Positive Emotions
+```python
 {
     "background_noise": "Soft jazz music playing in the background with occasional clinking of glasses.",
     "arousal": 3,
@@ -170,11 +341,15 @@ Example 1: Positive Emotions
     "health_or_disorder": 2,
     "softness_harshness": 1,
     "reverb": 0,
-    "monotony_melody": 1
+    "monotony_melody": 1,
+    "vocal_bursts": ["Joyful Laugh", "Contented Sigh"],
+    "caption": "A female speaker around 30 years old with a healthy, soft, and melodic voice speaks moderately, expressing strong elation and noticeable affection. The background features soft jazz music with occasional clinking of glasses, enhancing the pleasant and joyful atmosphere conveyed through her speech."
 }
+```
 
-Example 2: Negative Emotions
+#### Example 2: Negative Emotions
 
+```python
 {
     "background_noise": "Loud traffic noise with car horns blaring.",
     "arousal": 4,
@@ -190,11 +365,15 @@ Example 2: Negative Emotions
     "health_or_disorder": 1,
     "softness_harshness": -1,
     "reverb": 0,
-    "monotony_melody": -1
+    "monotony_melody": -1,
+    "vocal_bursts": ["Growl", "Snarl"],
+    "caption": "A male speaker approximately 45 years old with a slightly harsh and somewhat monotone voice speaks rapidly, displaying strong anger and noticeable contempt. The loud traffic noise with blaring car horns in the background intensifies the very negative and aggressive tone of the audio."
 }
+```
 
-Example 3: Low Arousal and Neutral Valence
+#### Example 3: Low Arousal and Neutral Valence
 
+```python
 {
     "background_noise": "Quiet room with a faint ticking clock.",
     "arousal": 1,
@@ -210,14 +389,25 @@ Example 3: Low Arousal and Neutral Valence
     "health_or_disorder": 0,
     "softness_harshness": 0,
     "reverb": 0,
-    "monotony_melody": -1
+    "monotony_melody": -1,
+    "vocal_bursts": ["Deep Sigh", "Mumbled 'Um...'"],
+    "caption": "A male speaker around 25 years old with a neutral and slightly monotone voice speaks slowly, conveying noticeable emotional numbness and subtle contemplation. The quiet room with a faint ticking clock in the background adds to the neutral and subdued atmosphere of the audio."
 }
+```
 
-Final Checklist
-All specified attributes are included in the dictionary.
-Data types are correct (strings, integers, lists, dictionaries).
-Values are within the defined ranges.
-Emotions are selected from the EMOTION TAXONOMY.
-Descriptions are detailed and specific where applicable.
-The output is properly formatted as a Python dictionary.
+---
+
+### Final Checklist
+
+- All specified attributes are included in the dictionary.
+- Data types are correct (strings, integers, lists, dictionaries).
+- Values are within the defined ranges.
+- Emotions are selected from the EMOTION TAXONOMY.
+- Vocal bursts are selected from the VOCAL BURSTS TAXONOMY.
+- Descriptions are detailed and specific where applicable.
+- The output is properly formatted as a Python dictionary.
+- The caption integrates all recognized attributes and elements of the audio.
+
+---
+
 Be very accurate about the annotation process and very factual in your descriptions.
