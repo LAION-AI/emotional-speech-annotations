@@ -14,7 +14,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
      ```
 
 2. arousal *(Integer)*:
-   - Description: Indicate the excitement level of the speaker based on their tone of voice.
+   - Description: Indicate the excitement level of the speaker based on their tone of voice. Solely focus on the speaker's tone of voice. Be very accurate about the annotation process and be very factual.
      - `0`: Quiet (e.g., whispering, very calm)
      - `1`: Calm (e.g., relaxed, low energy)
      - `2`: Normal speech (e.g., regular conversation)
@@ -26,7 +26,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
      ```
 
 3. dominance *(Integer)*:
-   - Description: Reflects the assertiveness level of the speaker based on their tone of voice.
+   - Description: Reflects the assertiveness level of the speaker based on their tone of voice. Solely focus on the speaker's tone of voice. Be very accurate about the annotation process and be very factual.
      - `-2`: Very submissive (e.g., timid, yielding)
      - `-1`: Submissive (e.g., hesitant, unsure)
      - `0`: Neutral
@@ -65,7 +65,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
      ```
 
 7. emotions *(List of Dictionaries)*:
-   - Description: List up to 5 emotions conveyed by the speaker, based on their tone of voice. Use the EMOTION TAXONOMY provided below. Each emotion should include:
+   - Description: List up to 5 emotions conveyed by the speaker, based on their tone of voice. Use the EMOTION TAXONOMY provided below. Solely focus on the speaker's tone of voice. Be very accurate about the annotation process and be very factual. Each emotion should include:
      - `category`: Emotion category from the taxonomy.
      - `intensity`:
        - `"Subtle intensity"`
@@ -80,7 +80,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
      ```
 
 8. valence *(Integer)*:
-   - Description: Reflects the positivity or negativity of the speech based on the speaker's tone of voice.
+   - Description: Reflects the positivity or negativity of the speech based on the speaker's tone of voice. Solely focus on the speaker's tone of voice. Be very accurate about the annotation process and be very factual.
      - `-2`: Very negative (e.g., angry, sad)
      - `-1`: Negative (e.g., slightly upset)
      - `0`: Neutral
@@ -91,19 +91,8 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
      "valence": 2
      ```
 
-9. health_or_disorder *(Integer)*:
-   - Description: Indicates how healthy the speaker's voice sounds.
-     - `2`: Very healthy (clear, vibrant voice)
-     - `1`: Healthy (normal tone)
-     - `0`: Neutral
-     - `-1`: Slightly unhealthy (tired, weak)
-     - `-2`: Unhealthy (hoarse, ill)
-   - Example:
-     ```python
-     "health_or_disorder": 2
-     ```
 
-10. softness_harshness *(Integer)*:
+9. softness_harshness *(Integer)*:
     - Description: Describes the quality of the voice.
       - `2`: Very soft (melodic, soothing)
       - `1`: Soft (pleasant)
@@ -115,7 +104,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
       "softness_harshness": 1
       ```
 
-11. reverb *(Integer)*:
+10. reverb *(Integer)*:
     - Description: Amount of echo or reverberation in the audio.
       - `0`: No reverb
       - `1`: Slight reverb (minimal echo)
@@ -127,7 +116,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
       "reverb": 0
       ```
 
-12. monotony_melody *(Integer)*:
+11. monotony_melody *(Integer)*:
     - Description: Indicates whether the speech is monotone or melodic.
       - `-2`: Very monotone (flat, no variation)
       - `-1`: Slightly monotone
@@ -139,14 +128,14 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
       "monotony_melody": 1
       ```
 
-13. vocal_bursts *(List of Strings)*:
+12. vocal_bursts *(List of Strings)*:
     - Description: List all detected vocal bursts present in the audio clip. Use the VOCAL BURSTS TAXONOMY provided below. Each vocal burst should be specified by its category.
     - Example:
       ```python
       "vocal_bursts": ["Chuckle", "Contented Sigh"]
       ```
 
-14. caption *(String)*:
+13. caption *(String)*:
     - Description: Provide a comprehensive caption of the audio that integrates all previously recognized attributes, elements, emotions, qualities, and other relevant details of the audio.
     - Example:
       ```python
@@ -338,7 +327,6 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
         {"category": "Affection", "intensity": "Well noticeable intensity"}
     ],
     "valence": 2,
-    "health_or_disorder": 2,
     "softness_harshness": 1,
     "reverb": 0,
     "monotony_melody": 1,
@@ -362,7 +350,6 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
         {"category": "Contempt", "intensity": "Well noticeable intensity"}
     ],
     "valence": -2,
-    "health_or_disorder": 1,
     "softness_harshness": -1,
     "reverb": 0,
     "monotony_melody": -1,
@@ -386,7 +373,6 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
         {"category": "Contemplation", "intensity": "Subtle intensity"}
     ],
     "valence": 0,
-    "health_or_disorder": 0,
     "softness_harshness": 0,
     "reverb": 0,
     "monotony_melody": -1,
@@ -404,6 +390,7 @@ Objective: Analyze a single short audio clip and produce a dictionary in Python 
 - Values are within the defined ranges.
 - Emotions are selected from the EMOTION TAXONOMY.
 - Vocal bursts are selected from the VOCAL BURSTS TAXONOMY.
+- Focus on how the tone of the speech sound, not on its textual content.
 - Descriptions are detailed and specific where applicable.
 - The output is properly formatted as a Python dictionary.
 - The caption integrates all recognized attributes and elements of the audio.
